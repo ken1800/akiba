@@ -1,22 +1,55 @@
-import java.util.List;
-
 class Asset {
-    private String type;
     private String name;
-    private String tickerSymbol;
+    private String type;
     private int quantity;
     private double purchasePrice;
     private double currentPrice;
 
-    // Constructor, getters, and setters
-    // Method to calculate value
-    public double calculateValue() {
-        // Implementation to calculate current market value
-        return 0.0;
+    public Asset(String name, String type, int quantity, double purchasePrice, double currentPrice) {
+        this.name = name;
+        this.type = type;
+        this.quantity = quantity;
+        this.purchasePrice = purchasePrice;
+        this.currentPrice = currentPrice;
     }
 
-    // Method to update price
-    public void updatePrice(double newPrice) {
-        // Implementation to update price based on market data
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public double getPurchasePrice() {
+        return purchasePrice;
+    }
+
+    public void setPurchasePrice(double purchasePrice) {
+        this.purchasePrice = purchasePrice;
+    }
+
+    public double getCurrentPrice() {
+        return currentPrice;
+    }
+
+    public void setCurrentPrice(double currentPrice) {
+        this.currentPrice = currentPrice;
     }
 }

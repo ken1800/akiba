@@ -1,25 +1,40 @@
-import java.util.List;
-
 class Investor {
     private String name;
     private String ID;
-    private String contactInformation;
     private double accountBalance;
-    private List<Unit> holdings;
 
-    // Constructor, getters, and setters
-    // Method to deposit
-    public void deposit(double amount) {
-        // Implementation to add funds to account
+    public Investor(String name, String ID, double accountBalance) {
+        this.name = name;
+        this.ID = ID;
+        this.accountBalance = accountBalance;
     }
 
-    // Method to withdraw
-    public void withdraw(double amount) {
-        // Implementation to redeem units
+    public String getName() {
+        return name;
     }
 
-    // Method to view portfolio
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+
+    public double getAccountBalance() {
+        return accountBalance;
+    }
+
+    public void setAccountBalance(double accountBalance) {
+        this.accountBalance = accountBalance;
+    }
+
     public void viewPortfolio() {
         // Implementation to show invested funds and current value
+        System.out.println(name + "'s Portfolio");
     }
 }

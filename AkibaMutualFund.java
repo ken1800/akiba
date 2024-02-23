@@ -1,21 +1,30 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class AkibaMutualFund {
-    // Methods for application functionality
+    private List<Fund> funds;
+
+    public AkibaMutualFund() {
+        this.funds = new ArrayList<>();
+    }
+
     public void registerInvestor(Investor investor) {
-        // Implementation to create a new investor account
+        System.out.println("New investor registered: " + investor.getName());
     }
 
     public boolean loginInvestor(String ID, String password) {
         // Implementation to authenticate and allow access to investor's account
-        return false;
+        return true;
     }
 
     public void displayFunds() {
-        // Implementation to show information about all available sub-funds
+        System.out.println("Available Funds:");
+        for (int i = 0; i < funds.size(); i++) {
+            System.out.println((i + 1) + ". " + funds.get(i).getName());
+        }
     }
 
-    public void selectFund(Fund fund) {
-        // Implementation to allow investor to choose a specific fund for further actions
+    public void addFund(Fund fund) {
+        funds.add(fund);
     }
-
-    // Additional methods for Fund, Investor, etc.
 }
