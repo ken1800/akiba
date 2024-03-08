@@ -1,6 +1,7 @@
 import java.util.List;
 import java.util.ArrayList;
 
+// Fund class
 class Fund {
     private String name;
     private String riskProfile;
